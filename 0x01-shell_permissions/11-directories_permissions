@@ -1,2 +1,2 @@
 #!/bin/bash
-mod -R ago+xX .
+chmod -R a+xX .
