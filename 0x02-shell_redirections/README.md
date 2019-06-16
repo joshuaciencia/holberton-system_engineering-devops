@@ -1,1 +1,1 @@
-sheel redirections
+Shell redirections
