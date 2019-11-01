@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# prints holberton school ten times
+c=0
+until [ "$c" -gt "10" ];
+do
+	echo "Holberton School"
+	((c = c + 1))
+done

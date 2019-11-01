@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# prints holberton school ten times plus Hi
+c=0
+while [ "$c" -lt 10 ];
+do
+	echo "Holberton School"
+	if [ "$c" -eq 8 ]
+	then
+		echo "Hi"
+	fi
+	((c++))
+done
