@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# prints holberton School ten times
+ps auxf
