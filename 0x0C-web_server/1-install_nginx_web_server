@@ -7,3 +7,4 @@ sudo rm /var/www/html/*.html
 sudo touch index.html
 sudo chmod 006 index.html
 sudo echo "Holberton School" > index.html
+sudo service nginx start
