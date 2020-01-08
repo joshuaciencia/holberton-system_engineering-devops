@@ -37,5 +37,5 @@ defaults
 frontend Local_Server
         bind *:80
         bind *:443 ssl crt /etc/haproxy/ssl/joshuaciencia.tech.pem
+        redirect scheme https if !{ ssl_fc }
         mode http
-        default_backend web_servers
