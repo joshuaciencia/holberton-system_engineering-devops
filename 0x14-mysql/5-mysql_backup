@@ -2,4 +2,4 @@
 # scripts that generates a backup
 mysqldump -u root -p"$1" --all-databases > backup.sql
 dest=$(date +"%d-%m-%y")
-tar -cvzf $dest.tar.tgz backup.sql
+tar -cvzf "$dest".tar.tgz backup.sql
