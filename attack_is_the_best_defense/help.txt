@@ -1,0 +1,4 @@
+This file contains some useful links that helped me to creack the password
+https://github.com/praetorian-code/Hob0Rules/blob/master/wordlists/rockyou.txt.gz (dictionary I used)
+https://linuxconfig.org/ssh-password-testing-with-hydra-on-kali-linux (how to use hydra)
+https://unix.stackexchange.com/questions/123243/how-to-remove-lines-shorter-than-xy/123244 (how to filer the dictionary)
