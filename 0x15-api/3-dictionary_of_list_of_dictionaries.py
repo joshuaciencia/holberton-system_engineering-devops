@@ -9,7 +9,7 @@ if __name__ == "__main__":
     output = {}
     for user in users:
         id = user.get("id")
-        name = user.get("name")
+        name = user.get("username")
         todo = []
         for d in todo_list:
             if d.get("userId") == id:

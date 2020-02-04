@@ -10,7 +10,7 @@ if __name__ == "__main__":
     name = get("https://jsonplaceholder.typicode.com/users/" + id)
     data = todo.json()
     tasks = []
-    name = name.json().get("name")
+    name = name.json().get("username")
     for d in data:
         if d.get("userId") == int(id):
             tit = d.get("title")

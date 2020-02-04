@@ -13,7 +13,7 @@ if __name__ == "__main__":
         if d.get("userId") == int(id):
             tasks.append((d.get("title"), d.get("completed")))
     f_name = id + ".csv"
-    name = name.json().get("name")
+    name = name.json().get("username")
     with open(f_name, "w") as f:
         for t in tasks:
             f.write('"{}","{}","{}","{}"\n'.format(id, name, t[1], t[0]))
