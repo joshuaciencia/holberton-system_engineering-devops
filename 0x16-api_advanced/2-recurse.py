@@ -18,10 +18,10 @@ def recurse(subreddit, hot_list=[], idx=0, after=None):
     if req.status_code != 200:
         return hot_list
     data = req.json().get('data').get('children')
+    after = req.json().get('data').get('after')
     try:
         title = data[idx].get('data').get('title')
         hot_list.append(title)
-        return recurse(subreddit, hot_list, idx + 1, None)
+        return recurse(subreddit, hot_list, idx + 1, after)
     except IndexError:
-        after = req.json().get('data').get('after')
         return recurse(subreddit, hot_list, 0, after)
