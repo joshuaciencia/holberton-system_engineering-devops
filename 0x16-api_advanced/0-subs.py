@@ -11,6 +11,6 @@ def number_of_subscribers(subreddit):
     headers = {
             'User-Agent': 'joshuaciencia'
             }
-    req = r.get(url, headers=headers)
+    req = r.get(url, headers=headers, allow_redirects=False)
     data = req.json().get('data').get('subscribers')
     return data if data is not None else 0
