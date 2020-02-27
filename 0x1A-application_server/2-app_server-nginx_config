@@ -1,0 +1,12 @@
+server {
+    listen 80;
+    server_name 34.74.29.106;
+    server_name 127.0.0.1;
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/home/ubuntu/AirBnB_clone_v2/AirBnB_clone_v2.sock;
+        root /var/www/board/public;
+        index index.html index.htm index.php;
+    }
+}
