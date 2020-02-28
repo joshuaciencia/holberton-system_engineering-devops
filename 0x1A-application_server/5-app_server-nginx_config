@@ -1,0 +1,9 @@
+server {
+    listen 80;
+    server_name 34.74.29.106;
+    server_name 127.0.0.1;
+
+    location / {
+        proxy_pass http://0.0.0.0:5003/2-hbnb;
+    }
+}
